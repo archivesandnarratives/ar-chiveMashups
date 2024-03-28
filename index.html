@@ -15,7 +15,7 @@
         <script src="libraries/gesture-handler.js"></script>
     </head>
     <body>
-        <a-scene embedded arjs
+        <a-scene embedded arjs="debugUIEnabled: false; patternRation: 0.70"
                  renderer="logarithmicDepthBuffer: true;"
                  vr-mode-ui="enabled: false"
                  gesture-detector
@@ -282,18 +282,28 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+
+                <a-text value="1"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>
+<!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -305,17 +315,29 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+
+                <a-text value="2"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="red" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -328,17 +350,28 @@
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
 
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                <a-text value="3"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -351,17 +384,27 @@
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
                 
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                <a-text value="4"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="green" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -373,18 +416,26 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                <a-text value="5"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -396,18 +447,27 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                <a-text value="6"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -419,17 +479,27 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                 <a-text value="7"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="black" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -441,17 +511,27 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+
+                <a-text value="8"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
 
                 <!-- Basic box. -->
-                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>
+                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -463,18 +543,27 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
-
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
+                 <a-text value="9"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
                 
-                                            <!-- Basic box. -->
-                <a-box color="white" depth="2" height="4" width="0.5"></a-box>
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
