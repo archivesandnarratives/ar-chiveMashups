@@ -28,6 +28,8 @@
 // Additionally, check out that you can load in audio, images, and video - play around with these
 -->
             <a-assets timeout="3000">
+
+                <!--Coles House Assets-->
                 <img id="01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
                 <img id="02" src="assets/images_historical/02_Coles-Ext_02_Entrance.jpg">
                 <img id="03" src="assets/images_historical/05_Coles-Ext_04_rearElevation.jpg">
@@ -42,28 +44,13 @@
                 <img id="12" src="assets/images_historical/22_Coles-Int_04_Bedroom.jpg">
 
 
-                <img id="livingRoom" src="assets/images_historical/06_GMyers1963_LR_NW.jpg">
-                <a-asset-item id="tree-obj" src="assets/scans_3D/textured.obj"></a-asset-item>
-                <a-asset-item id="tree-mtl" src="assets/scans_3D/textured.mtl"> </a-asset-item>
+                <!--Jesse Nash Health Center Assets-->
+                <img id="Jesse Nash_01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+
+
             </a-assets>
 
-            <!--
-// Construct entity
-// To load image: https://aframe.io/docs/1.5.0/primitives/a-image.html
-// To load video: https://aframe.io/docs/1.5.0/primitives/a-video.html
-// To load sound: https://aframe.io/docs/1.5.0/components/sound.html
-// To load obj-models: https://aframe.io/docs/1.5.0/components/obj-model.html
-// To load gltf or glb models: https://aframe.io/docs/1.5.0/components/gltf-model.html
--->
-            
-<!--
-            <a-entity scale="1 1 1"
-                      obj-model="obj: #tree-obj; mtl: #tree-mtl" rotation="0 0 0">
-            </a-entity>
--->
 
-            <!--            // Animate and rotate element-->
-            <!--            <a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation>-->
 
             <!-- define a camera which will move according to the marker position -->
             <a-marker-camera preset='hiro'>
@@ -71,9 +58,10 @@
             </a-marker-camera>
 
 
+            <!--_____________________________Coles House Markers_____________________________-->
             <a-marker id="coles_01"
                       type="pattern"
-                      url="newMarkers/pattern-coles_01.patt"
+                      url="markers/colesMarkers/pattern-coles_01.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -91,7 +79,7 @@
 
             <a-marker id="coles_02"
                       type="pattern"
-                      url="newMarkers/pattern-coles_02.patt"
+                      url="markers/colesMarkers/pattern-coles_02.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -108,7 +96,7 @@
 
             <a-marker id="coles_03"
                       type="pattern"
-                      url="newMarkers/pattern-coles_03.patt"
+                      url="markers/colesMarkers/pattern-coles_03.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -126,7 +114,7 @@
 
             <a-marker id="coles_06"
                       type="pattern"
-                      url="newMarkers/pattern-coles_04.patt"
+                      url="markers/colesMarkers/pattern-coles_04.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -144,7 +132,7 @@
 
             <a-marker id="coles_05"
                       type="pattern"
-                      url="newMarkers/pattern-coles_05.patt"
+                      url="markers/colesMarkers/pattern-coles_05.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -162,7 +150,7 @@
 
             <a-marker id="coles_06"
                       type="pattern"
-                      url="newMarkers/pattern-coles_06.patt"
+                      url="markers/colesMarkers/pattern-coles_06.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -179,7 +167,7 @@
 
             <a-marker id="coles_07"
                       type="pattern"
-                      url="newMarkers/pattern-coles_07.patt"
+                      url="markers/colesMarkers/pattern-coles_07.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -196,7 +184,7 @@
 
             <a-marker id="coles_08"
                       type="pattern"
-                      url="newMarkers/pattern-coles_08.patt"
+                      url="markers/colesMarkers/pattern-coles_08.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -214,7 +202,7 @@
 
             <a-marker id="coles_09"
                       type="pattern"
-                      url="newMarkers/pattern-coles_09.patt"
+                      url="markers/colesMarkers/pattern-coles_09.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -232,7 +220,7 @@
 
             <a-marker id="coles_10"
                       type="pattern"
-                      url="newMarkers/pattern-coles_10.patt"
+                      url="markers/colesMarkers/pattern-coles_10.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -250,7 +238,7 @@
 
             <a-marker id="coles_11"
                       type="pattern"
-                      url="newMarkers/pattern-coles_11.patt"
+                      url="markers/colesMarkers/pattern-coles_11.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -268,7 +256,7 @@
 
             <a-marker id="coles_12"
                       type="pattern"
-                      url="newMarkers/pattern-coles_12.patt"
+                      url="markers/colesMarkers/pattern-coles_12.patt"
                       raycaster="objects: .clickable"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
@@ -284,25 +272,211 @@
             </a-marker>
 
 
-            <!--
-<a-marker id="coles_01"
-type="pattern"
-url="newMarkers/pattern-coles_01.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
-
->
-<a-image src="#01"
-position="0 0 0"
-rotation="0 0 0"
-scale="10 10 10"
-animation="property: material.opacity; from: 0.9; to: 0.4; loop: true; dir: alternate; dur: 5000">
-</a-image>
-</a-marker>
--->
 
 
+            <!--_____________________________Jesse Nash Health Center_____________________________-->
+            <a-marker id="Nash_01"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_02"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="red" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_03"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_04"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="green" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_05"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_06"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>
+
+
+            <a-marker id="Nash_07"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="black" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>  
+
+
+            <a-marker id="Nash_08"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+
+                <!-- Basic box. -->
+                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>  
+
+
+            <a-marker id="Nash_09"
+                      type="pattern"
+                      url="markers/nashMarkers/wNumbers/pattern-nashMarkers_09.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+                
+                                            <!-- Basic box. -->
+                <a-box color="white" depth="2" height="4" width="0.5"></a-box>
+
+            </a-marker>  
 
         </a-scene>
     </body>
