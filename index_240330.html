@@ -1,0 +1,1143 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1.4.0/dist/aframe-master.min.js"></script>
+        <script src="libraries/aframe-ar.js"></script>
+        <script src="libraries/gesture-detector.js"></script>
+        <script src="libraries/gesture-handler.js"></script>
+    </head>
+
+
+
+    <body>
+        <!--                 embedded arjs="debugUIEnabled: false; patternRation: 0.70"-->
+        <a-scene embedded arjs
+                 renderer="logarithmicDepthBuffer: true;"
+                 vr-mode-ui="enabled: false"
+                 gesture-detector
+                 id="scene"
+                 >
+
+            <!--
+// Load assets
+// To understand all methods to load assets, visit this site: https://aframe.io/docs/1.5.0/core/asset-management-system.html
+// Additionally, check out that you can load in audio, images, and video - play around with these
+-->
+            <a-assets timeout="3000">
+
+                <!--Coles House Assets-->
+                <img id="01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="02" src="assets/images_historical/02_Coles-Ext_02_Entrance.jpg">
+                <img id="03" src="assets/images_historical/05_Coles-Ext_04_rearElevation.jpg">
+                <img id="04" src="assets/images_historical/06_Coles-Int_01_LivingRoom.jpg">
+                <img id="05" src="assets/images_historical/07_Coles-Int_07_dining.jpg">
+                <img id="06" src="assets/images_historical/08_Coles-Int_08_intStair.jpg">
+                <img id="07" src="assets/images_historical/09_Coles-Int_05_kitchen.jpg">
+                <img id="08" src="assets/images_historical/10_Coles-Int_03_LivingRoom.jpg">
+                <img id="09" src="assets/images_historical/17_Coles-Ext_03_rear.jpg">
+                <img id="10" src="assets/images_historical/18_Coles-Int_06_kitchen.jpg">
+                <img id="11" src="assets/images_historical/21_Coles-Int_02_LivingRoom.jpg">
+                <img id="12" src="assets/images_historical/22_Coles-Int_04_Bedroom.jpg">
+
+
+                <!--Jesse Nash Health Center Assets-->
+                <img id="Jesse Nash_01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+
+
+            </a-assets>
+
+
+
+            <!-- define a camera which will move according to the marker position -->
+            <a-marker-camera preset='hiro'>
+
+            </a-marker-camera>
+
+
+            <!--_____________________________Coles House Markers_____________________________-->
+            <a-marker id="coles_01"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#01"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.9; to: 4.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_02"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#02"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.9; to: 0.5; loop: true; dir: alternate; dur: 10000">
+                </a-image>
+            </a-marker>
+
+            <a-marker id="coles_03"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+
+                      >
+                <a-image src="#03"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.8; to: 0.6; loop: true; dir: alternate; dur: 4000">
+                </a-image>
+            </a-marker>
+
+            <a-marker id="coles_06"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#04"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_05"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#05"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_06"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#06"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+            <a-marker id="coles_07"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#07"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+            <a-marker id="coles_08"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#08"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_09"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_09.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#09"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_10"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_10.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#10"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_11"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_11.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#11"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+            <a-marker id="coles_12"
+                      type="pattern"
+                      url="markers/colesMarkers/pattern-coles_12.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-image src="#12"
+                         position="0 2 0"
+                         rotation="0 0 0"
+                         scale="4 4 4"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+                </a-image>
+            </a-marker>
+
+
+
+
+            <!--_____________________________Jesse Nash Health Center_____________________________-->
+            <a-marker id="Nash_01"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="1"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_02"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="2"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_03"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="3"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_04"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="4"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_05"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="5"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_06"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="6"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="Nash_07"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="7"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="magenta"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="Nash_08"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="8"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="Nash_09"
+                      type="pattern"
+                      url="markers/nashMarkers/bigLetters/pattern-pattern-nashMarkers_09.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="9"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <!--
+<a-image src="#12"
+position="0 2 0"
+rotation="0 0 0"
+scale="4 4 4"
+class="clickable"
+gesture-handler
+animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
+</a-image>
+-->
+
+                <!-- Basic box. -->
+                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+
+
+
+            <!--_____________________________JFK Recreation Center_____________________________-->
+            <a-marker id="JFK_01"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="JFK1"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_02"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="JFK2"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_03"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="JFK3"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_04"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="JFK4"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_05"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="JFK5"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_06"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="JFK6"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="JFK_07"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="JFK7"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="magenta"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_08"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="JFK8"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="JFK_09"
+                      type="pattern"
+                      url="markers/jfkMarkers/jfk_numbers_50/pattern-jfkMarker_09.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="JFK9"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+
+
+
+            <!--_____________________________Kelly Gardens_____________________________-->
+            <a-marker id="kellyGardens_01"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG1"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="kellyGardens_02"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG2"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="kellyGardens_03"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG3"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="kellyGardens_04"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG4"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="kellyGardens_05"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="KG5"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="kellyGardens_06"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="KG6"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+
+            <!--_____________________________New School 40_____________________________-->
+            <a-marker id="40_01"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="40_01"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_02"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="40_02"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_03"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="40_03"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_04"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="40_04"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_05"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="40_05"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_06"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="40_06"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>
+
+
+            <a-marker id="40_07"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="40_07"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="magenta"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="40_08"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="40_08"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+            <a-marker id="40_09"
+                      type="pattern"
+                      url="markers/newSchool40/school40/pattern-school40Marker_09.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="40_09"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+
+                <!-- Basic box. -->
+                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
+
+            </a-marker>  
+
+
+
+
+
+
+
+        </a-scene>
+    </body>
+</html>
