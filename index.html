@@ -24,27 +24,53 @@
 -->
             <a-assets timeout="3000">
 
-                <!--Coles House Assets-->
-                <img id="01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
-                <img id="02" src="assets/images_historical/02_Coles-Ext_02_Entrance.jpg">
-                <img id="03" src="assets/images_historical/05_Coles-Ext_04_rearElevation.jpg">
-                <img id="04" src="assets/images_historical/06_Coles-Int_01_LivingRoom.jpg">
-                <img id="05" src="assets/images_historical/07_Coles-Int_07_dining.jpg">
-                <img id="06" src="assets/images_historical/08_Coles-Int_08_intStair.jpg">
-                <img id="07" src="assets/images_historical/09_Coles-Int_05_kitchen.jpg">
-                <img id="08" src="assets/images_historical/10_Coles-Int_03_LivingRoom.jpg">
-                <img id="09" src="assets/images_historical/17_Coles-Ext_03_rear.jpg">
-                <img id="10" src="assets/images_historical/18_Coles-Int_06_kitchen.jpg">
-                <img id="11" src="assets/images_historical/21_Coles-Int_02_LivingRoom.jpg">
-                <img id="12" src="assets/images_historical/22_Coles-Int_04_Bedroom.jpg">
-
-
                 <!--Jesse Nash Health Center Assets-->
-                <img id="Jesse Nash_01" src="assets/images_historical/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="jesseNash_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="jesseNash_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="jesseNash_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+                <!--JFK Recreation Center-->
+                <img id="jfk_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="jfk_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="jfk_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+                <!--Kelly Gardens-->
+                <img id="kellyGardens_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="kellyGardens_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="kellyGardens_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+                <!--Alumni Arena-->
+                <img id="alumni_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="alumni_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="alumni_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+
+                <!--Merriweather-->
+                <img id="Merriweather_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="Merriweather_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="Merriweather_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+
+                <!--New School 40-->
+                <img id="newSchool40_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="newSchool40_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="newSchool40_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+
+                <!--Apollo-->
+                <img id="apollo_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="apollo_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="apollo_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
+
+                <!--YMCA-->
+                <img id="ymca_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
+                <img id="ymca_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
+                <img id="ymca_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+
 
 
             </a-assets>
-
 
 
             <!-- define a camera which will move according to the marker position -->
@@ -52,219 +78,6 @@
 
             </a-marker-camera>
 
-
-            <!--_____________________________Coles House Markers_____________________________-->
-            <a-marker id="coles_01"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_01.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#01"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 0.9; to: 4.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_02"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_02.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#02"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 0.9; to: 0.5; loop: true; dir: alternate; dur: 10000">
-                </a-image>
-            </a-marker>
-
-            <a-marker id="coles_03"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_03.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-
-                      >
-                <a-image src="#03"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 0.8; to: 0.6; loop: true; dir: alternate; dur: 4000">
-                </a-image>
-            </a-marker>
-
-            <a-marker id="coles_06"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_04.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#04"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_05"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_05.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#05"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_06"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_06.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#06"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-            <a-marker id="coles_07"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_07.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#07"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-            <a-marker id="coles_08"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_08.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#08"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_09"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_09.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#09"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_10"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_10.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#10"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_11"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_11.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#11"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
-
-
-            <a-marker id="coles_12"
-                      type="pattern"
-                      url="markers/colesMarkers/pattern-coles_12.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;"
-                      >
-                <a-image src="#12"
-                         position="0 2 0"
-                         rotation="0 0 0"
-                         scale="4 4 4"
-                         class="clickable"
-                         gesture-handler
-                         animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-                </a-image>
-            </a-marker>
 
 
 
@@ -286,19 +99,14 @@
                         >
                 </a-text>
 
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
+                <a-image src="#jesseNash_01"
+                         position="0 0.1 0"
+                         rotation="90 0 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.75; to: 0.9; loop: true; dir: alternate; dur: 1000">
+                </a-image>
 
             </a-marker>
 
@@ -319,22 +127,17 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+                <a-image src="#jesseNash_02"
+                         position="0 0.2 0"
+                         rotation="90 0 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.75; to: 0.9; loop: true; dir: alternate; dur: 1000">
+                </a-image>
 
             </a-marker>
+
 
 
             <a-marker id="Nash_03"
@@ -353,22 +156,17 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-                <!--
-
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+                <a-image src="#jesseNash_03"
+                         position="0 0.2 0"
+                         rotation="90 0 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.75; to: 0.9; loop: true; dir: alternate; dur: 1000">
+                </a-image>
 
             </a-marker>
+
 
 
             <a-marker id="Nash_04"
@@ -387,21 +185,8 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
+
 
 
             <a-marker id="Nash_05"
@@ -411,6 +196,7 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
+
                 <a-text value="5"
                         position="0 1 0"
                         height="15"
@@ -418,19 +204,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -450,20 +223,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
 
 
@@ -481,20 +240,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="magenta"
                         >
                 </a-text>
-
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -514,19 +259,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -538,6 +270,7 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
+
                 <a-text value="9"
                         position="0 1 0"
                         height="15"
@@ -545,20 +278,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-
-                <!--
-<a-image src="#12"
-position="0 2 0"
-rotation="0 0 0"
-scale="4 4 4"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alternate; dur: 5000">
-</a-image>
--->
-
-                <!-- Basic box. -->
-                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -583,11 +302,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-
-                <!-- Basic box. -->
-                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
 
 
@@ -606,12 +320,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-
-
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -632,11 +340,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
 
 
@@ -656,11 +359,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="green" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
 
 
@@ -678,10 +376,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="grey" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -701,11 +395,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="magenta" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>
 
 
@@ -723,10 +412,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="magenta"
                         >
                 </a-text>
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="black" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -747,10 +432,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
-
-                <!-- Basic box. -->
-                <!--                <a-box color="brown" depth="2" height="4" width="0.5"></a-box>-->
-
             </a-marker>  
 
 
@@ -768,10 +449,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>  
 
@@ -795,11 +472,6 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         color="red"
                         >
                 </a-text>
-
-
-
-                <!-- Basic box. -->
-                <!--                                <a-box color="blue" depth="2" height="4" width="0.5"></a-box>-->
 
             </a-marker>
 
@@ -1126,11 +798,115 @@ animation="property: material.opacity; from: 1.0; to: 1.0; loop: true; dir: alte
                         >
                 </a-text>
 
+            </a-marker>  
 
-                <!-- Basic box. -->
-                <!--                <a-box color="white" depth="2" height="4" width="0.5"></a-box>-->
+
+            <!--_____________________________Apollo_____________________________-->
+
+            <a-marker id="apollo_01"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_01"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>
+
+            <a-marker id="apollo_02"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_02"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
 
             </a-marker>  
+
+            <a-marker id="apollo_03"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_03"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>  
+
+            <a-marker id="apollo_04"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_04"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>  
+
+
+            <a-marker id="apollo_05"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_05"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>  
+
+
+            <a-marker id="apollo_06"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_06"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>  
+
 
 
 
