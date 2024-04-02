@@ -44,9 +44,17 @@
                 <img id="jfk_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
 
                 <!--Kelly Gardens-->
-                <img id="kellyGardens_01" src="assets/atelier/01_Coles-Ext_01_fromHumboldtPkwy.jpg">
-                <img id="kellyGardens_02" src="assets/atelier/02_Coles-Ext_02_Entrance.jpg">
-                <img id="kellyGardens_03" src="assets/atelier/05_Coles-Ext_04_rearElevation.jpg">
+                <img id="kellyGardens_01" src="assets/atelier/kellyGardens-01_IMG_0924.jpg">
+                <img id="kellyGardens_02" src="assets/atelier/kellyGardens-02_IMG_0930.jpg">
+                <img id="kellyGardens_03" src="assets/atelier/kellyGardens-03_IMG_0931.jpg">
+                <img id="kellyGardens_04" src="assets/atelier/kellyGardens-04_IMG_0932.jpg">
+                <img id="kellyGardens_05" src="assets/atelier/kellyGardens-05_IMG_0937.jpg">
+                <img id="kellyGardens_06" src="assets/atelier/kellyGardens-06_IMG_0938.jpg">
+
+                <!--
+<img id="kellyGardens_07" src="assets/atelier/kellyGardens-07_IMG_0946.jpg">
+<img id="kellyGardens_08" src="assets/atelier/kellyGardens-08_IMG_0950.jpg">
+-->
 
                 <!--Alumni Arena-->
                 <img id="alumni_01" src="assets/atelier/alumni-01_Waterfront-restudy.jpg">
@@ -207,7 +215,6 @@
                         >
                 </a-text>
 
-<!--
                 <a-image src="#jesseNash_03"
                          position="0 0.2 0"
                          rotation="90 180 0"
@@ -216,15 +223,6 @@
                          gesture-handler
                          animation="property: material.opacity; from: 0.85; to: 0.95; loop: true; dir: alternate; dur: 1000">
                 </a-image>
--->
-
-
-                <a-entity scale="1 1 1"
-                          obj-model="obj: #jfk_01-obj; mtl: #jfk_01-mtl" 
-                          class="clickable"
-                          gesture-handler
-                          rotation="0 0 0">
-                </a-entity>
 
             </a-marker>
 
@@ -596,6 +594,15 @@ color="red"
                         >
                 </a-text>
 
+                <a-image src="#kellyGardens_01"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
             </a-marker>
 
 
@@ -615,11 +622,14 @@ color="red"
                         >
                 </a-text>
 
-
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="red" depth="2" height="4" width="0.5"></a-box>-->
+                <a-image src="#kellyGardens_02"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
 
             </a-marker>
 
@@ -640,10 +650,14 @@ color="red"
                         >
                 </a-text>
 
-
-
-                <!-- Basic box. -->
-                <!--                <a-box color="yellow" depth="2" height="4" width="0.5"></a-box>-->
+                <a-image src="#kellyGardens_03"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
 
             </a-marker>
 
@@ -664,6 +678,15 @@ color="red"
                         >
                 </a-text>
 
+                <a-image src="#kellyGardens_04"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
             </a-marker>
 
 
@@ -682,6 +705,15 @@ color="red"
                         >
                 </a-text>
 
+                <a-image src="#kellyGardens_05"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
             </a-marker>
 
 
@@ -692,6 +724,7 @@ color="red"
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;"
                       >
+
                 <a-text value="KG6"
                         position="0 1 0"
                         height="15"
@@ -700,7 +733,72 @@ color="red"
                         >
                 </a-text>
 
+                <a-image src="#kellyGardens_06"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
             </a-marker>
+
+<!--
+            <a-marker id="kellyGardens_07"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_07.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG7"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#kellyGardens_07"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>
+
+            <a-marker id="kellyGardens_08"
+                      type="pattern"
+                      url="markers/kellyGardensMarkers/kgMarkers/pattern-kellyGardensMarker_08.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="KG8"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#kellyGardens_08"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>
+-->
 
 
 
@@ -959,162 +1057,163 @@ animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alt
 
             <!--_____________________________Apollo_____________________________-->
 
+
+            <a-marker id="apollo_01"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_01.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="apollo_01"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#apollo_01"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>
+
+            <a-marker id="apollo_02"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_02.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="apollo_02"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+            </a-marker>  
+
+            <a-marker id="apollo_03"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_03.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+                <a-text value="apollo_03"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#apollo_03"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>  
+
+            <a-marker id="apollo_04"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_04.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="apollo_04"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#apollo_04"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>  
+
+
+            <a-marker id="apollo_05"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_05.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="apollo_05"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#apollo_05"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>  
+
+
+            <a-marker id="apollo_06"
+                      type="pattern"
+                      url="markers/apollo/apolloMarkers/pattern-apollo_06.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;"
+                      >
+
+                <a-text value="apollo_06"
+                        position="0 1 0"
+                        height="15"
+                        width="15"
+                        color="red"
+                        >
+                </a-text>
+
+                <a-image src="#apollo_06"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
+            </a-marker>  
+
+
             <!--
-<a-marker id="apollo_01"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_01.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-
-<a-text value="apollo_01"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-<a-image src="#apollo_01"
-position="0 0.1 0"
-rotation="90 180 0"
-scale="1.5 1.5 1.5"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
-</a-image>
-
-</a-marker>
-
-<a-marker id="apollo_02"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_02.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-
-<a-text value="apollo_02"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-</a-marker>  
-
-<a-marker id="apollo_03"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_03.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-<a-text value="apollo_03"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-<a-image src="#apollo_03"
-position="0 0.1 0"
-rotation="90 180 0"
-scale="1.5 1.5 1.5"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
-</a-image>
-
-</a-marker>  
-
-<a-marker id="apollo_04"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_04.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-
-<a-text value="apollo_04"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-<a-image src="#apollo_04"
-position="0 0.1 0"
-rotation="90 180 0"
-scale="1.5 1.5 1.5"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
-</a-image>
-
-</a-marker>  
-
-
-<a-marker id="apollo_05"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_05.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-
-<a-text value="apollo_05"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-<a-image src="#apollo_05"
-position="0 0.1 0"
-rotation="90 180 0"
-scale="1.5 1.5 1.5"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
-</a-image>
-
-</a-marker>  
-
-
-<a-marker id="apollo_06"
-type="pattern"
-url="markers/apollo/apolloMarkers/pattern-apollo_06.patt"
-raycaster="objects: .clickable"
-emitevents="true"
-cursor="fuse: false; rayOrigin: mouse;"
->
-
-<a-text value="apollo_06"
-position="0 1 0"
-height="15"
-width="15"
-color="red"
->
-</a-text>
-
-<a-image src="#apollo_06"
-position="0 0.1 0"
-rotation="90 180 0"
-scale="1.5 1.5 1.5"
-class="clickable"
-gesture-handler
-animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
-</a-image>
-
-</a-marker>  
-
-
 
 <a-marker id="apollo_07"
 type="pattern"
@@ -1142,10 +1241,8 @@ animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alt
 </a-image>
 
 </a-marker>  
--->
 
-            <!-------------------------------------------------------------------------------->
-            <!--
+
 <a-marker id="apollo_08"
 type="pattern"
 url="markers/apollo/apolloMarkers/pattern-apollo_08.patt"
