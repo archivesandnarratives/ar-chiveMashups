@@ -121,8 +121,10 @@
 
                 <!--YMCA-->
 
-                <a-asset-item id="ymca_01-obj" src="assets/atelier/textured.obj"></a-asset-item>
-                <a-asset-item id="ymca_01-mtl" src="assets/atelier/textured.mtl"> </a-asset-item>
+                <!--
+<a-asset-item id="ymca_01-obj" src="assets/atelier/textured.obj"></a-asset-item>
+<a-asset-item id="ymca_01-mtl" src="assets/atelier/textured.mtl"> </a-asset-item>
+-->
 
 
                 <img id="ymca_01" src="assets/atelier/ymca-01_WEColesDrawing.jpg">
@@ -1907,9 +1909,21 @@ color="red"
 </a-text>
 -->
 
-                <a-entity scale="0.1 0.1 0.1"
-                          obj-model="obj: #ymca_01-obj; mtl: #ymca_01-mtl" rotation="0 0 0">
-                </a-entity>
+                <!--
+<a-entity scale="0.1 0.1 0.1"
+obj-model="obj: #ymca_01-obj; mtl: #ymca_01-mtl" rotation="0 0 0">
+</a-entity>
+-->
+
+                <a-image src="#ymca_06"
+                         position="0 0.1 0"
+                         rotation="90 180 0"
+                         scale="1.5 1.5 1.5"
+                         class="clickable"
+                         gesture-handler
+                         animation="property: material.opacity; from: 0.7; to: 0.95; loop: true; dir: alternate; dur: 1000">
+                </a-image>
+
 
             </a-marker>
 
